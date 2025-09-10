@@ -2,6 +2,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+import os
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 from langchain.schema import SystemMessage, HumanMessage
 #from langchain.chat_models import ChatOpenAI
